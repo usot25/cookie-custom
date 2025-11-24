@@ -8,8 +8,21 @@
     <link rel="stylesheet" href="./styles.css">
 
     <script>
-  document.cookie = "userId=12345; path=/; max-age=3600"; 
-</script>
+
+        document.cookie = "username=User123";
+        //   A simple key-value cookie.
+
+        document.cookie = "userId=12345; path=/; max-age=3600";
+        //   Defines how long the cookie should live.
+
+        document.cookie = "expireTest=yes; path=/; expires=Fri, 01 Jan 2027 12:00:00 GMT";
+        // Expiry cookie
+
+        document.cookie = "sessionToken=xyz; secure; path=/";
+        // Only sent over HTTPS connections.
+
+
+    </script>
 
 
 </head>
@@ -30,7 +43,7 @@
     </main>
 
     <footer class="footer">
-        <p>© <span id="year"></span> Demo</p>
+        <p>© <span id="year"></span> Custom Cookies</p>
     </footer>
 
     <script>
